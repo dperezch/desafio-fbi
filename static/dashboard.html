@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FBI</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="jumbotron bg-info text-white">
+      <h1 id="emailPlaceholder" class="display-4"></h1>
+      <p class="lead">
+        Mollit irure sunt qui est ipsum voluptate esse ex consectetur.
+        Adipisicing voluptate exercitation elit consectetur voluptate excepteur
+        aute consequat in. Exercitation consectetur mollit fugiat nostrud sunt
+        elit culpa quis ullamco elit. Nisi sint elit excepteur duis excepteur
+        magna. Laborum officia commodo amet proident ut proident incididunt sunt
+        veniam aliqua ipsum labore aliquip.
+      </p>
+      <hr class="my-4" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quia
+        sequi exercitationem fugit, dignissimos ab maiores excepturi laboriosam
+        quas ex facere quaerat veniam? Ullam ducimus iure velit! Rem, ex
+        expedita.
+      </p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+
+    <script>
+      //https://www.sitepoint.com/get-url-parameters-with-javascript/
+      //Capturar queryStrings para adjuntar email al saludo
+      const urlParams = new URLSearchParams(window.location.search);
+      const email = urlParams.get("email");
+
+      document.getElementById(
+        "emailPlaceholder"
+      ).textContent = `Bienvenido: ${email} !!!`;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "desafio_fbi",
+  "version": "1.0.0",
+  "description": "desafio fbi system",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "dev": "npx nodemon --env-file=.env index.js"
+  },
+  "author": "David Perez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
